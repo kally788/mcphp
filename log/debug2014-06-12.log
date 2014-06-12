@@ -64,3 +64,27 @@
     -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 18 [ output ]
     -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 118 [ test ]
     -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 03:48:10 8488 DEBUG - 输入：action=example,method=test,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 105 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 03:48:10 8508 DEBUG - 输出：{"retCode":200,"serTime":1402559290,"reqId":0,"retBody":"hello mcphp!~"} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 104 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 18 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 118 [ test ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 03:48:11 7347 DEBUG - 输入：action=example,method=test,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 105 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 03:48:11 7367 DEBUG - 输出：{"retCode":200,"serTime":1402559291,"reqId":0,"retBody":"hello mcphp!~"} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 104 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 18 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 118 [ test ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
