@@ -1,0 +1,66 @@
+2014-06-12 01:56:18 557 DEBUG - 输入：action=,method=,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 105 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 01:56:18 5587 FATAL - Action.class.php 接口模块不存在 ErrCode: 1
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 28 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Core.class.php in 76 [ error ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Core.class.php in 40 [ import ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 107 [ load ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 01:56:18 5604 DEBUG - 输出：{"retCode":1,"serTime":1402552578,"reqId":0} 耗时：(4)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 104 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 125 [ output ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 02:04:30 0571 DEBUG - 输入：action=,method=,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 105 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 02:04:30 0582 FATAL - Action.class.php 接口模块不存在 ErrCode: 1
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 28 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Core.class.php in 76 [ error ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Core.class.php in 40 [ import ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 107 [ load ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 02:04:30 0592 DEBUG - 输出：{"retCode":1,"serTime":1402553070,"reqId":0} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 104 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 125 [ output ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 02:04:56 2394 DEBUG - 输入：action=example,method=,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 105 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 02:04:56 2418 FATAL - example:: 调用的接口错误 ErrCode: 2
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 28 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ error ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 02:04:56 2432 DEBUG - 输出：{"retCode":2,"serTime":1402553096,"reqId":0} 耗时：(4)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 104 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 122 [ output ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 02:05:31 7925 DEBUG - 输入：action=example,method=test,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 105 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 02:05:31 7936 DEBUG - 输出：{"retCode":200,"serTime":1402553131,"reqId":0,"retBody":"hello mcphp!~"} 耗时：(1)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 47 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 104 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 18 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 118 [ test ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
