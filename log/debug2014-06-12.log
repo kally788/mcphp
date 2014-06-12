@@ -88,3 +88,439 @@
     -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 18 [ output ]
     -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 118 [ test ]
     -> D:\office\winNMP\web\mcphp\VIEW\index.php in 14 [ startup ]
+
+2014-06-12 06:14:27 8751 DEBUG - 输入：action=example,method=test,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 06:14:27 8776 DEBUG - 输出：{"retCode":200,"serTime":1402568067,"reqId":0,"retBody":"hello mcphp!~"} 耗时：(3)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 27 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ test ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 07:52:29 0232 DEBUG - 输入：action=example,method=hello,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 07:52:29 0248 DEBUG - 输出：{"retCode":200,"serTime":1402573949,"reqId":0,"retBody":"hello mcphp!~"} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 28 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ hello ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 07:56:18 8486 DEBUG - 输入：action=example,method=simpleParams,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 07:56:18 8895 DEBUG - 输出：{"retCode":200,"serTime":1402574178,"reqId":0,"retBody":"处理参数后返回值：[]"} 耗时：(41)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 37 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ simpleParams ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 07:56:58 1471 DEBUG - 输入：action=example,method=simpleParams,reqId=,callback=,token=,param=我是参数
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 07:56:58 1487 DEBUG - 输出：{"retCode":200,"serTime":1402574218,"reqId":0,"retBody":"处理参数后返回值：[我是参数]"} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 37 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ simpleParams ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:03:08 3262 DEBUG - 输入：action=example,method=simpleParams,reqId=,callback=,token=,param={"object":{"key":"我是一个对象"},"array":["我是数组"],"int":123,"string":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:03:08 3292 DEBUG - 输出：{"retCode":200,"serTime":1402574588,"reqId":0,"retBody":"处理参数后返回值：[Array]"} 耗时：(3)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 37 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ simpleParams ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:03:36 3079 DEBUG - 输入：action=example,method=simpleParams,reqId=,callback=,token=,param={"object":{"key":"我是一个对象"},"array":["我是数组"],"int":123,"string":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:03:36 3089 DEBUG - 输出：{"retCode":200,"serTime":1402574616,"reqId":0,"retBody":"处理参数后返回值：[Array]"} 耗时：(1)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 37 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ simpleParams ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:04:13 7972 DEBUG - 输入：action=example,method=simpleParams,reqId=,callback=,token=,param={"object":{"key":"我是一个对象"},"array":["我是数组"],"int":123,"string":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:04:13 7983 DEBUG - 输出：{"retCode":200,"serTime":1402574653,"reqId":0,"retBody":"处理参数后返回值：[Array]"} 耗时：(1)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 37 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ simpleParams ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:04:32 3814 DEBUG - 输入：action=example,method=simpleParams,reqId=,callback=,token=,param={"object":{"key":"我是一个对象"},"array":["我是数组"],"int":123,"string":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:04:32 3831 DEBUG - 输出：{"retCode":200,"serTime":1402574672,"reqId":0,"retBody":"处理参数后返回值：[Array]"} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 37 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ simpleParams ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:04:49 1446 DEBUG - 输入：action=example,method=simpleParams,reqId=,callback=,token=,param={"object":{"key":"我是一个对象"},"array":["我是数组"],"int":123,"string":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:04:49 1458 DEBUG - 输出：{"retCode":200,"serTime":1402574689,"reqId":0,"retBody":"处理参数后返回值：[Array]"} 耗时：(1)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 37 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ simpleParams ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:05:19 6624 DEBUG - 输入：action=example,method=mixedParams,reqId=,callback=,token=,param={"object":{"key":"我是一个对象"},"array":["我是数组"],"int":123,"string":"我是字符串"}array":["我是数组"],"int":123,"string":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:05:55 9947 DEBUG - 输入：action=example,method=mixedParams,reqId=,callback=,token=,param={"object":{"key":"我是一个对象"},"array":["我是数组"],"int":123,"string":"我是字符串"}array":["我是数组"],"int":123,"string":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:06:08 4649 DEBUG - 输入：action=example,method=mixedParams,reqId=,callback=,token=,param={"object":{"key":"我是一个对象"},"array":["我是数组"],"int":123,"string":"我是字符串"}array":["我是数组"],"int":123,"string":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:06:16 151 DEBUG - 输入：action=example,method=mixedParams,reqId=,callback=,token=,param={"object":{"key":"我是一个对象"},"array":["我是数组"],"int":123,"string":"我是字符串"}array":["我是数组"],"int":123,"string":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:06:16 1521 DEBUG - 输出：{"retCode":200,"serTime":1402574776,"reqId":0,"retBody":"分析得到的对象：[object:{,array:,int:{,string:{]"} 耗时：(1)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 45 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ mixedParams ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:06:35 4489 DEBUG - 输入：action=example,method=mixedParams,reqId=,callback=,token=,param={"object":{"key":"我是一个对象"},"array":["我是数组"],"int":123,"string":"我是字符串"}array":["我是数组"],"int":123,"string":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:07:37 043 DEBUG - 输入：action=example,method=mixedParams,reqId=,callback=,token=,param={"object":{"key":"我是一个对象"},"array":["我是数组"],"int":123,"string":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:07:37 0445 DEBUG - 输出：{"retCode":200,"serTime":1402574857,"reqId":0,"retBody":"分析得到的对象：[object:我是一个对象,array:我是数组,int:123,string:我是字符串]"} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 46 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ mixedParams ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:08:05 6166 DEBUG - 输入：action=example,method=mixedParams,reqId=,callback=,token=,param={"object":{"key":"我是一个对象"},"array":["我是数组"],"int":123,"string":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:08:05 618 DEBUG - 输出：{"retCode":200,"serTime":1402574885,"reqId":0,"retBody":"分析得到的数据：object:我是一个对象,array:我是数组,int:123,string:我是字符串"} 耗时：(1)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 46 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ mixedParams ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:12:01 7447 DEBUG - 输入：action=example,method=mixedReturn,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:12:01 7468 DEBUG - 输出：{"retCode":200,"serTime":1402575121,"reqId":0,"retBody":{"int":123,"string":"我是字符串","object":{"key":"我是一个对象"},"array":["我是数组"]}} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 54 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ mixedReturn ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:15:04 0728 DEBUG - 输入：action=example,method=discernReq,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:15:04 0741 DEBUG - 输出：{"retCode":200,"serTime":1402575304,"reqId":0} 耗时：(1)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 61 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ discernReq ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:15:06 6599 DEBUG - 输入：action=example,method=discernReq,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:15:06 6609 DEBUG - 输出：{"retCode":200,"serTime":1402575306,"reqId":0} 耗时：(1)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 61 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ discernReq ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:15:31 1026 DEBUG - 输入：action=example,method=discernReq,reqId=123456,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:15:31 1037 DEBUG - 输出：{"retCode":200,"serTime":1402575331,"reqId":"123456"} 耗时：(1)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 61 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ discernReq ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:40:22 4307 DEBUG - 输入：action=example,method=login,reqId=,callback=,token=,param={"user":"zhujili","pwd":123456}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:40:22 6751 DEBUG - 输出：{"retCode":200,"serTime":1402576822,"reqId":0,"token":"c8b8bb54931584b5031afbc9bc820c56","retBody":"登录成功！"} 耗时：(244)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 73 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ login ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:40:33 0518 DEBUG - 输入：action=example,method=login,reqId=,callback=,token=,param={"user":"zhujili","pwd":1234567}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:40:33 0529 DEBUG - 输出：{"retCode":101010,"serTime":1402576833,"reqId":0,"retBody":"登录失败！"} 耗时：(1)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 76 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ login ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:41:10 5282 DEBUG - 输入：action=example,method=authFunc,reqId=,callback=,token=c8b8bb54931584b5031afbc9bc820c56,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:41:10 5301 DEBUG - 输出：{"retCode":200,"serTime":1402576870,"reqId":0,"retBody":"验证通过了，这里的处理业务逻辑的"} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 87 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ authFunc ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:41:17 0213 DEBUG - 输入：action=example,method=authFunc,reqId=,callback=,token=1c8b8bb54931584b5031afbc9bc820c56,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:41:17 041 DEBUG - 输出：{"retCode":5,"serTime":1402576877,"reqId":0} 耗时：(20)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 147 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 85 [ _tokenAuth ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ authFunc ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:47:42 2704 DEBUG - 输入：action=example,method=authFunc,reqId=,callback=,token=c8b8bb54931584b5031afbc9bc820c56,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:47:42 2726 DEBUG - 输出：{"retCode":200,"serTime":1402577262,"reqId":0,"retBody":"验证通过了，这里的处理业务逻辑的"} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 87 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ authFunc ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:48:04 0425 DEBUG - 输入：action=example,method=exitLogin,reqId=,callback=,token=c8b8bb54931584b5031afbc9bc820c56,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:48:04 0445 DEBUG - 输出：{"retCode":200,"serTime":1402577284,"reqId":0,"retBody":"安全退出成功！"} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 98 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ exitLogin ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:48:08 3156 DEBUG - 输入：action=example,method=authFunc,reqId=,callback=,token=c8b8bb54931584b5031afbc9bc820c56,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:48:08 3177 DEBUG - 输出：{"retCode":5,"serTime":1402577288,"reqId":0} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 147 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 85 [ _tokenAuth ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ authFunc ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:48:09 5365 DEBUG - 输入：action=example,method=authFunc,reqId=,callback=,token=c8b8bb54931584b5031afbc9bc820c56,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 08:48:09 5382 DEBUG - 输出：{"retCode":5,"serTime":1402577289,"reqId":0} 耗时：(2)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 147 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 85 [ _tokenAuth ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ authFunc ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 09:39:38 7977 DEBUG - 输入：action=example,method=writeSingleData,reqId=,callback=,token=,param={"a":888,"b":999,"c":"abc","d":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 09:39:38 9919 DEBUG - 输出：{"retCode":200,"serTime":1402580378,"reqId":0,"retBody":"新插入数据的ID为：1"} 耗时：(194)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 108 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ writeSingleData ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 09:40:33 0483 DEBUG - 输入：action=example,method=writeSingleData,reqId=,callback=,token=,param={"a":888,"b":999,"c":"abc","d":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 09:40:33 1423 DEBUG - 输出：{"retCode":200,"serTime":1402580433,"reqId":0,"retBody":"新插入数据的ID为：1"} 耗时：(94)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 108 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ writeSingleData ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 09:41:10 9567 DEBUG - 输入：action=example,method=writeSingleData,reqId=,callback=,token=,param={"a":888,"b":999,"c":"abc","d":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 09:41:11 0296 DEBUG - 输出：{"retCode":200,"serTime":1402580471,"reqId":0,"retBody":"新插入数据的ID为：1"} 耗时：(73)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 108 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ writeSingleData ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 09:41:17 3627 DEBUG - 输入：action=example,method=writeSingleData,reqId=,callback=,token=,param={"a":888,"b":999,"c":"abc","d":"我是字符串"}
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 09:41:17 4458 DEBUG - 输出：{"retCode":200,"serTime":1402580477,"reqId":0,"retBody":"新插入数据的ID为：2"} 耗时：(83)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 108 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ writeSingleData ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 09:48:13 4265 DEBUG - 输入：action=example,method=writeBatchData,reqId=,callback=,token=,param=[{"a":1,"b":1,"c":"aa","d":"aa"},{"a":2,"b":2,"c":"bb","d":"bb"},{"a":3,"b":3,"c":"cc","d":"cc"}]
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 09:48:13 4831 DEBUG - 输出：{"retCode":200,"serTime":1402580893,"reqId":0,"retBody":"新插入数据的ID为：3,4,5"} 耗时：(57)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 118 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ writeBatchData ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 10:11:45 4501 DEBUG - 输入：action=example,method=simpleWhereData,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 10:11:45 55 DEBUG - 输出：{"retCode":200,"serTime":1402582305,"reqId":0,"retBody":"获取数据：Array"} 耗时：(100)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 144 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ simpleWhereData ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 10:12:26 1645 DEBUG - 输入：action=example,method=simpleWhereData,reqId=,callback=,token=,param=
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 10:12:26 1781 DEBUG - 输出：{"retCode":200,"serTime":1402582346,"reqId":0,"retBody":{"获取数据：":{"id":"1","a":"888","b":"999","c":"abc","d":"我是字符串"}}} 耗时：(14)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 144 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ simpleWhereData ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 10:52:45 4327 DEBUG - 输入：action=example,method=getData,reqId=,callback=,token=,param=2
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 10:53:30 6971 DEBUG - 输入：action=example,method=getData,reqId=,callback=,token=,param=2
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 10:53:30 7039 DEBUG - 输出：{"retCode":200,"serTime":1402584810,"reqId":0,"retBody":{"获得数据：":[{"id":"1","a":"888","b":"999","c":"abc","d":"我是字符串"},{"id":"2","a":"888","b":"999","c":"abc","d":"我是字符串"},{"id":"3","a":"1","b":"1","c":"aa","d":"aa"}]}} 耗时：(7)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 148 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ getData ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 10:53:48 6622 DEBUG - 输入：action=example,method=getData,reqId=,callback=,token=,param=1
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 10:53:48 6698 DEBUG - 输出：{"retCode":200,"serTime":1402584828,"reqId":0,"retBody":{"获得数据：":{"id":"1","a":"888","b":"999","c":"abc","d":"我是字符串"}}} 耗时：(8)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 143 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ getData ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 10:53:52 9292 DEBUG - 输入：action=example,method=getData,reqId=,callback=,token=,param=2
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 114 [ logs ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
+
+2014-06-12 10:53:52 9366 DEBUG - 输出：{"retCode":200,"serTime":1402584832,"reqId":0,"retBody":{"获得数据：":[{"id":"1","a":"888","b":"999","c":"abc","d":"我是字符串"},{"id":"2","a":"888","b":"999","c":"abc","d":"我是字符串"},{"id":"3","a":"1","b":"1","c":"aa","d":"aa"}]}} 耗时：(7)毫秒
+    -> D:\office\winNMP\web\mcphp\SRC\Common\Common.func.php in 57 [ put ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Action.class.php in 113 [ logs ]
+    -> D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php in 148 [ output ]
+    -> D:\office\winNMP\web\mcphp\SRC\Core\Facade.class.php in 127 [ getData ]
+    -> D:\office\winNMP\web\mcphp\VIEW\index.php in 23 [ startup ]
