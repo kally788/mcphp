@@ -126,9 +126,9 @@ class ExampleAction extends action
 
 
     //查询数据
-    ///VIEW/index.php?action=example&method=getData&param=1
-    //根据参数类型决定查询方式，可选值1-6
-    public function getData($_params){
+    ///VIEW/index.php?action=example&method=operateData&param=1
+    //根据参数类型决定查询方式，可选值1-8
+    public function operateData($_params){
         //取得数据层
         $model = $this->_getModel("Example");
 
@@ -154,15 +154,30 @@ class ExampleAction extends action
                 break;
             case 4:
                 //读取数据返回为K=>V方式
+                $rs = $model->getObj();
+                $this->output(array("取得的数据用OBJECT封装，KEY为数据库主键：" => $rs));
                 break;
             case 5:
                 //更新数据
+                $rs1 = $model->idByData(2);
+                $model->upObj(2);
+                $rs2 = $model->idByData(2);
+                $this->output(array("修改ID为2的记录"=>array("修改前：" => $rs1[0], "修改后：" => $rs2[0])));
                 break;
             case 6:
-                //删除数据
+                //获取记录数
+                $count = $model->dataCount();
+                $this->output(array("test表的记录数是："=>$count));
                 break;
             case 7:
-                //获取记录数
+                //删除数据
+                $delCount = $model->delData();
+                $this->output(array("删除了的记录数："=>$delCount));
+                break;
+            case 8:
+                //分表操作
+                $userId = 43261;//模拟的用户ID，通常是采用用户ID进行分表。也可以用其它的来确定分表规则
+                $this->output(array("获得43261用户的split表数据："=>$model->splitData($userId)));
                 break;
             default:
                 //错误的参数
@@ -170,11 +185,56 @@ class ExampleAction extends action
         }
     }
 
+    //事务操作，删除一条test表的数据，再插入一条新的数
+    ///VIEW/index.php?action=example&method=trans&param=6
+    public function trans($_params){
+        //取得数据层
+        $model = $this->_getModel("Example");
+
+        //其它逻辑操作
+        //......
+
+        if($model->continuous($_params)){
+            $this->output("事务操作成功");
+        }else{
+            $this->output("事务操作失败");
+        }
+    }
+
     //自定义缓存数据
+    ///VIEW/index.php?action=example&method=setCacheData&param=要缓存的数据
+    public function setCacheData($_params){
+        //直接调用公共方法进行缓存数据即可
+        cache("cacheData", $_params, 60);
+        $this->output("缓存成功");
+    }
 
     //获取自定义缓存数据
+    ///VIEW/index.php?action=example&method=getCacheData
+    public function getCacheData(){
+        //直接调用公共方法获取缓存即可
+        $this->output("缓存：" . cache("cacheData"));
+    }
 
     //上传图片
+    ///VIEW/index.php?action=example&method=upload
+    //需要自定义file文件参数，HTML中的文本域
+    public function upload(){
+        $name=time();
+        $name.=strrchr($_FILES["file"]["name"],".");
+        $type=$_FILES["file"]["type"];
+        $size=$_FILES["file"]["size"];
+        $tmp_name=$_FILES["file"]["tmp_name"];
+        if($_FILES["file"]["error"]>0){
+            $this->output("上传文件有误:".$_FILES["file"]["error"]);
+        }else{
+            if(move_uploaded_file($tmp_name,DIR_STATIC . "/" . $name)){
+                $this->output("上传文件名：" . $name . " ,文件类型：" . $type . " ,文件大小：" . ($size/1024) . " ,上传到：" . $tmp_name);
+            }else{
+                $this->output($name . "上传失败");
+            }
+        }
+    }
 
     public function beforeStartup($_param){
 

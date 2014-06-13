@@ -1,0 +1,6 @@
+[12-Jun-2014 20:05:19] PHP Fatal error:  Cannot use string offset as an array in D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php on line 44
+[12-Jun-2014 20:05:55] PHP Fatal error:  Cannot use string offset as an array in D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php on line 44
+[12-Jun-2014 20:06:08] PHP Fatal error:  Cannot use string offset as an array in D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php on line 44
+[12-Jun-2014 20:06:35] PHP Fatal error:  Cannot use string offset as an array in D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php on line 44
+[12-Jun-2014 22:52:45] PHP Fatal error:  Call to undefined function gt() in D:\office\winNMP\web\mcphp\SRC\Model\ExampleModel.class.php on line 47
+[13-Jun-2014 11:27:22] PHP Fatal error:  Call to undefined function idByData() in D:\office\winNMP\web\mcphp\SRC\Action\ExampleAction.class.php on line 162

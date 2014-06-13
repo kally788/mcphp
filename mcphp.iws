@@ -2,10 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b817c5c4-2670-4b63-a793-3f07aa433850" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SRC/Config/ErrCode.inc.php" afterPath="$PROJECT_DIR$/SRC/Config/ErrCode.inc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/STATIC/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_tools/unittest/UnitTest.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_tools/unittest/UploadTest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_tools/apidoc/apiCreate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_doc/api/apidoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_logs/debug2014-06-12.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_logs/debug2014-06-13.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_doc/demo/demoDesc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_db/mcphp.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_logs/system.log" />
+      <change type="DELETED" beforePath="D:\office\winNMP\web\mcphp\db\mcphp.sql" afterPath="" />
+      <change type="DELETED" beforePath="D:\office\winNMP\web\mcphp\log\debug2014-06-12.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SRC/Config/DriveConf.inc.php" afterPath="$PROJECT_DIR$/SRC/Config/DriveConf.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SRC/Action/ExampleAction.class.php" afterPath="$PROJECT_DIR$/SRC/Action/ExampleAction.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SRC/Model/ExampleModel.class.php" afterPath="$PROJECT_DIR$/SRC/Model/ExampleModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/debug2014-06-12.log" afterPath="$PROJECT_DIR$/log/debug2014-06-12.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SRC/Core/Facade.class.php" afterPath="$PROJECT_DIR$/SRC/Core/Facade.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SRC/Config/SystemSet.inc.php" afterPath="$PROJECT_DIR$/SRC/Config/SystemSet.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mcphp.iws" afterPath="$PROJECT_DIR$/mcphp.iws" />
     </list>
     <ignored path="server.iws" />
@@ -69,53 +83,7 @@
     <favorites_list name="server" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ExampleAction.class.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SRC/Action/ExampleAction.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="23" selection-start="5580" selection-end="5580" vertical-scroll-proportion="0.25042883" vertical-offset="1830" max-vertical-offset="2527">
-              <folding>
-                <element signature="e#6#508#0" expanded="true" />
-                <element signature="n#hello#0;n#ExampleAction#0;n#!!top" expanded="false" />
-                <element signature="n#simpleParams#0;n#ExampleAction#0;n#!!top" expanded="false" />
-                <element signature="n#mixedParams#0;n#ExampleAction#0;n#!!top" expanded="false" />
-                <element signature="n#mixedReturn#0;n#ExampleAction#0;n#!!top" expanded="false" />
-                <element signature="n#discernReq#0;n#ExampleAction#0;n#!!top" expanded="false" />
-                <element signature="n#login#0;n#ExampleAction#0;n#!!top" expanded="false" />
-                <element signature="e#2392#2682#0" expanded="false" />
-                <element signature="n#authFunc#0;n#ExampleAction#0;n#!!top" expanded="false" />
-                <element signature="n#exitLogin#0;n#ExampleAction#0;n#!!top" expanded="false" />
-                <element signature="n#addData#0;n#ExampleAction#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExampleModel.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SRC/Model/ExampleModel.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="10" selection-start="1658" selection-end="1671" vertical-scroll-proportion="-16.964285" vertical-offset="570" max-vertical-offset="1216">
-              <folding>
-                <element signature="e#6#508#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SRC/Core/Model.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="16" selection-start="2846" selection-end="2850" vertical-scroll-proportion="314.2143" vertical-offset="10736" max-vertical-offset="16055">
-              <folding>
-                <element signature="e#6#508#0" expanded="true" />
-                <marker date="1402566369724" expanded="true" signature="17594:17631" placeholder="SELECT COUNT..." />
-                <marker date="1402566369724" expanded="true" signature="20297:20325" placeholder="DELETE FROM ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -139,12 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SRC/Config/protos.inc.php" />
-        <option value="$PROJECT_DIR$/SRC/Core/facade.php" />
-        <option value="$PROJECT_DIR$/VIEW/controller/test.class.php" />
-        <option value="$PROJECT_DIR$/VIEW/controller/testController.class.php" />
-        <option value="$PROJECT_DIR$/SRC/Core/controller.abstract.php" />
-        <option value="$PROJECT_DIR$/VIEW/unittest/test.html" />
         <option value="$PROJECT_DIR$/SRC/Common/common.func.php" />
         <option value="$PROJECT_DIR$/SRC/Lib/memcached.class.php" />
         <option value="$PROJECT_DIR$/SRC/Model/testModel.php" />
@@ -178,18 +140,24 @@
         <option value="$PROJECT_DIR$/SRC/Lib/Mysql.class.php" />
         <option value="$PROJECT_DIR$/SRC/Lib/Memcached.class.php" />
         <option value="$PROJECT_DIR$/SRC/Lib/Logger.class.php" />
-        <option value="$PROJECT_DIR$/SRC/Core/Facade.class.php" />
         <option value="$PROJECT_DIR$/SRC/Core/Model.class.php" />
-        <option value="$PROJECT_DIR$/SRC/Config/DriveConf.inc.php" />
-        <option value="$PROJECT_DIR$/SRC/Config/SystemSet.inc.php" />
         <option value="$PROJECT_DIR$/SRC/Common/Common.func.php" />
         <option value="$PROJECT_DIR$/LICENSE.txt" />
         <option value="$PROJECT_DIR$/SRC/Config/ErrCode.inc.php" />
         <option value="$PROJECT_DIR$/../../../wc/image/官网宣传页/style/page.css" />
-        <option value="$PROJECT_DIR$/../../../wc/image/官网宣传页/index.html" />
         <option value="$USER_HOME$/Desktop/nginx.conf" />
         <option value="$PROJECT_DIR$/SRC/Model/ExampleModel.class.php" />
+        <option value="$PROJECT_DIR$/SRC/Core/Facade.class.php" />
         <option value="$PROJECT_DIR$/SRC/Action/ExampleAction.class.php" />
+        <option value="$PROJECT_DIR$/SRC/Config/DriveConf.inc.php" />
+        <option value="$PROJECT_DIR$/SRC/Config/SystemSet.inc.php" />
+        <option value="$PROJECT_DIR$/_tools/unittest/Unittes.class.php" />
+        <option value="$PROJECT_DIR$/../../../wc/image/官网宣传页/index.html" />
+        <option value="$PROJECT_DIR$/_tools/unittest/UnitTest.class.php" />
+        <option value="$PROJECT_DIR$/_doc/api/apidoc" />
+        <option value="$PROJECT_DIR$/_doc/demo/demoDesc" />
+        <option value="$PROJECT_DIR$/_tools/apidoc/apiCreate" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -227,6 +195,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -245,109 +214,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mcphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mcphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VIEW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mcphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mcphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SRC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mcphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mcphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SRC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mcphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mcphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SRC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mcphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mcphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SRC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mcphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mcphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SRC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -652,7 +520,8 @@
       <workItem from="1402554906164" duration="77000" />
       <workItem from="1402555006477" duration="861000" />
       <workItem from="1402556473414" duration="847000" />
-      <workItem from="1402559180507" duration="30306000" />
+      <workItem from="1402559180507" duration="51627000" />
+      <workItem from="1402654460238" duration="4080000" />
     </task>
     <task id="LOCAL-00001" summary="更新注释">
       <created>1402560709243</created>
@@ -666,11 +535,15 @@
       <created>1402567971981</created>
       <updated>1402567971981</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update Example">
+      <created>1402594375737</created>
+      <updated>1402594375737</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="784986000" />
+    <option name="totallyTimeSpent" value="810387000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -709,7 +582,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49105915" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -722,15 +594,16 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1716515" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49105915" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -748,8 +621,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -769,7 +642,8 @@
     <MESSAGE value="更新注释" />
     <MESSAGE value="update Licensed" />
     <MESSAGE value="update Licensed&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Licensed&#10;" />
+    <MESSAGE value="update Example" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Example" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -781,11 +655,49 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/VIEW/index.php">
+    <entry file="file://$PROJECT_DIR$/_tools/unittest/UnitTest.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="2" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="380">
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1197">
+          <folding>
+            <element signature="e#6#92#0" expanded="true" />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../wc/image/官网宣传页/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="32" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.0" vertical-offset="1520" max-vertical-offset="2546">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VIEW/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="2" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="380" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/date.php">
@@ -888,39 +800,19 @@
         <state line="69" column="64" selection-start="1686" selection-end="1686" vertical-scroll-proportion="-0.5742857" vertical-offset="1713" max-vertical-offset="2413" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.056296296" vertical-offset="0" max-vertical-offset="675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ThinkPHP_3.2.2_Core/ThinkPHP/ThinkPHP.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="270" selection-end="480" vertical-scroll-proportion="-3.2857144" vertical-offset="3" max-vertical-offset="1919">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VIEW/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="82" selection-start="504" selection-end="504" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="551">
-          <folding />
-        </state>
+        <state line="5" column="0" selection-start="270" selection-end="480" vertical-scroll-proportion="-3.2857144" vertical-offset="3" max-vertical-offset="1919" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SRC/Lib/Mysql.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="82" selection-start="504" selection-end="504" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="6498">
-          <folding />
-        </state>
+        <state line="8" column="82" selection-start="504" selection-end="504" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="6498" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SRC/Lib/Memcached.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="82" selection-start="504" selection-end="504" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="3097">
-          <folding />
-        </state>
+        <state line="8" column="82" selection-start="504" selection-end="504" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="3097" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SRC/Lib/Logger.class.php">
@@ -945,114 +837,170 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="63" selection-start="447" selection-end="447" vertical-scroll-proportion="0.41666666" vertical-offset="0" max-vertical-offset="456" />
+      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="63" selection-start="447" selection-end="447" vertical-scroll-proportion="0.41666666" vertical-offset="0" max-vertical-offset="456">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SRC/Core/Facade.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="39" selection-start="4062" selection-end="4067" vertical-scroll-proportion="-43.25" vertical-offset="917" max-vertical-offset="2831">
-          <folding>
-            <element signature="e#6#508#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SRC/Core/Action.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="30" selection-start="4967" selection-end="4970" vertical-scroll-proportion="61.892857" vertical-offset="4450" max-vertical-offset="5035">
-          <folding>
-            <element signature="e#6#505#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SRC/Config/DriveConf.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="82" selection-start="504" selection-end="504" vertical-scroll-proportion="-0.13422818" vertical-offset="232" max-vertical-offset="1292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SRC/Config/SystemSet.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="82" selection-start="504" selection-end="504" vertical-scroll-proportion="0.25503355" vertical-offset="0" max-vertical-offset="596">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SRC/Config/ErrCode.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="27" selection-start="696" selection-end="713" vertical-scroll-proportion="0.38255033" vertical-offset="114" max-vertical-offset="760">
           <folding>
-            <element signature="e#6#508#0" expanded="true" />
+            <element signature="e#6#508#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../wc/image/企业管理后台/WangcaiManage/js/wangcai-1.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../wc/image/官网宣传页/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="39" selection-start="2512" selection-end="2512" vertical-scroll-proportion="0.47802198" vertical-offset="1145" max-vertical-offset="1843">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6935" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../wc/image/企业管理后台/WangcaiManage/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1384" selection-end="1454" vertical-scroll-proportion="0.34819898" vertical-offset="310" max-vertical-offset="893">
-          <folding />
-        </state>
+        <state line="27" column="0" selection-start="1384" selection-end="1454" vertical-scroll-proportion="0.34819898" vertical-offset="310" max-vertical-offset="893" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../wc/image/官网宣传页/style/page.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="77" selection-start="785" selection-end="785" vertical-scroll-proportion="0.15224358" vertical-offset="114" max-vertical-offset="2109">
-          <folding />
-        </state>
+        <state line="11" column="77" selection-start="785" selection-end="785" vertical-scroll-proportion="0.15224358" vertical-offset="114" max-vertical-offset="2109" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="45" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.63461536" vertical-offset="1409" max-vertical-offset="2527">
-          <folding />
+        <state line="95" column="45" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.63461536" vertical-offset="1409" max-vertical-offset="2527" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/phpunit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="69" selection-start="3093" selection-end="3093" vertical-scroll-proportion="-257.25385" vertical-offset="150815" max-vertical-offset="1395189" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRC/Core/Model.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="634" column="34" selection-start="21753" selection-end="21758" vertical-scroll-proportion="0.26342282" vertical-offset="11889" max-vertical-offset="16055" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRC/Config/SystemSet.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="7" selection-start="647" selection-end="647" vertical-scroll-proportion="0.5100671" vertical-offset="0" max-vertical-offset="596">
+          <folding>
+            <element signature="e#6#508#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VIEW/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="0.31879196" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRC/Config/DriveConf.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="26" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.61744964" vertical-offset="696" max-vertical-offset="1292" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRC/Core/Facade.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="19" selection-start="728" selection-end="738" vertical-scroll-proportion="0.5471698" vertical-offset="4" max-vertical-offset="2850">
+          <folding>
+            <element signature="e#6#508#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SRC/Model/ExampleModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="10" selection-start="1658" selection-end="1671" vertical-scroll-proportion="-16.964285" vertical-offset="570" max-vertical-offset="1216">
+        <state line="75" column="0" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.4899329" vertical-offset="1133" max-vertical-offset="2413" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../wc/image/官网宣传页/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="7" selection-start="173" selection-end="2967" vertical-scroll-proportion="0.77684563" vertical-offset="1019" max-vertical-offset="1615" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../wc/image/官网宣传页/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="40" selection-start="2657" selection-end="2657" vertical-scroll-proportion="-0.15939598" vertical-offset="1444" max-vertical-offset="2546">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRC/Core/Action.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="26" selection-start="3059" selection-end="3065" vertical-scroll-proportion="0.49399656" vertical-offset="1517" max-vertical-offset="5035">
           <folding>
-            <element signature="e#6#508#0" expanded="true" />
+            <element signature="e#6#505#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SRC/Core/Model.class.php">
+    <entry file="file://$PROJECT_DIR$/_tools/unittest/UnitTest.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="16" selection-start="2846" selection-end="2850" vertical-scroll-proportion="314.2143" vertical-offset="10736" max-vertical-offset="16055">
+        <state line="161" column="5" selection-start="2905" selection-end="2905" vertical-scroll-proportion="4.181208" vertical-offset="567" max-vertical-offset="4275">
           <folding>
-            <element signature="e#6#508#0" expanded="true" />
-            <marker date="1402566369724" expanded="true" signature="17594:17631" placeholder="SELECT COUNT..." />
-            <marker date="1402566369724" expanded="true" signature="20297:20325" placeholder="DELETE FROM ..." />
+            <element signature="e#6#92#0" expanded="true" />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402658853774" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_doc/demo/demoDesc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="624">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_doc/api/apidoc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="624">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tools/apidoc/apiCreate">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="624">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="82" selection-end="82" vertical-scroll-proportion="0.25375625" vertical-offset="0" max-vertical-offset="599">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SRC/Action/ExampleAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="23" selection-start="5580" selection-end="5580" vertical-scroll-proportion="0.25042883" vertical-offset="1830" max-vertical-offset="2527">
+        <state line="226" column="46" selection-start="7634" selection-end="7634" vertical-scroll-proportion="0.26586622" vertical-offset="3322" max-vertical-offset="3990">
           <folding>
             <element signature="e#6#508#0" expanded="true" />
             <element signature="n#hello#0;n#ExampleAction#0;n#!!top" expanded="false" />
@@ -1061,10 +1009,8 @@
             <element signature="n#mixedReturn#0;n#ExampleAction#0;n#!!top" expanded="false" />
             <element signature="n#discernReq#0;n#ExampleAction#0;n#!!top" expanded="false" />
             <element signature="n#login#0;n#ExampleAction#0;n#!!top" expanded="false" />
-            <element signature="e#2392#2682#0" expanded="false" />
             <element signature="n#authFunc#0;n#ExampleAction#0;n#!!top" expanded="false" />
             <element signature="n#exitLogin#0;n#ExampleAction#0;n#!!top" expanded="false" />
-            <element signature="n#addData#0;n#ExampleAction#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

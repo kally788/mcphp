@@ -15,6 +15,7 @@
  */
 define ("DIR_ROOT", dirname(__FILE__) . "/../.."); //根目录
 define ("DIR_SRC", DIR_ROOT . "/SRC"); //源码目录
+define ("DIR_STATIC", DIR_ROOT . "/STATIC"); //静态文件目录
 define ("DIR_CORE", DIR_SRC . "/Core"); //框架核心类库目录
 define ("DIR_CONFIG", DIR_SRC . "/Config"); //配置目录
 define ("DIR_COMMON", DIR_SRC . "/Common"); //公共方法目录

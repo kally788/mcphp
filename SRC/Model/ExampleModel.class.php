@@ -29,13 +29,12 @@ class ExampleModel extends model
         return $this->_table("test")->_create($_data);
     }
 
-
     public function idByData($_id)
     {
         //其它逻辑
         //......
 
-        //读取一条ID为N的记录
+        //读取一条ID为$_id的记录
         return $this->_table("test")->_eq("id",$_id)->_read();
     }
 
@@ -54,6 +53,70 @@ class ExampleModel extends model
         //......
 
         //a字段降序然后读取3条记录
-        return $this->_table("test")->_limit(3)->_orderDesc("a")->_read();
+        return $this->_table("test")->_orderDesc("a")->_limit(3)->_read();
     }
+
+    public function getObj()
+    {
+        //其它逻辑
+        //......
+
+        //读取为OBJECT
+        return $this->_table("test")->_read("*", "id");
+    }
+
+    public function upObj($_id)
+    {
+        //其它逻辑
+        //......
+
+        //修改ID为$_id的记录,d字段附上当前时间戳
+        return $this->_table("test")->_eq("id",$_id)->_update(array("c"=>"efg", "d"=>"时间戳:" . time()));
+    }
+
+    public function dataCount(){
+        //其它逻辑
+        //......
+
+        //获取数据量记录数
+        return $this->_table("test")->_read("count");
+    }
+
+    public function delData(){
+        //其它逻辑
+        //......
+
+        //刪除ID大于等于5的记录
+        return $this->_table("test")->_egt("id",5)->_delete();
+    }
+
+    public function splitData($_id)
+    {
+        //其它逻辑
+        //......
+
+        //根据用户ID进行分表定位
+        return $this->_table("split", $_id, 10)->_read();
+    }
+
+    public function continuous($_id){
+        //其它逻辑
+        //......
+
+        //开始事务
+        $this->_startTrans();
+        $this->_table("test")->_eq("id",$_id)->_delete();//删除一条记录
+        //$this->_table("testxxxx")->_eq("id",$_id)->_delete();//去掉本句的注释，事务将回滚，因为表不存在
+        $this->_table("test")->_create(array("a"=>33,"b"=>33,"c"=>"cc","d"=>"cc"));//插入一条记录
+        if($this->_isError()){
+            //出现错误
+            $this->_rollback();
+            return false;
+        }else{
+            //正常提交
+            $this->_commit();
+            return true;
+        }
+    }
+
 } 
