@@ -129,10 +129,10 @@ class Facade
         } catch (Exception $e) {
             //产生异常时，返回错误码到前端
             if (isset($actionObj)) {
-                $actionObj->output(SystemSet::DEBUG == "Off" ? null : $e->getMessage(), $e->getCode());
+                $actionObj->output(SystemSet::DEBUG == false ? null : $e->getMessage(), $e->getCode());
             }
             $actionObj = new Action();
-            $actionObj->output(SystemSet::DEBUG == "Off" ? null : $e->getMessage(), $e->getCode());
+            $actionObj->output(SystemSet::DEBUG == false ? null : $e->getMessage(), $e->getCode());
         }
     }
 
