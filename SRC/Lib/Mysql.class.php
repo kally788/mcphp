@@ -329,7 +329,7 @@ class Mysql
      * @param $_e
      */
     private function __error($_e){
-        logs($_e, Logger::ERROR);
+        logs($_e, LogRecord::ERROR);
         $this->__errList[] = $_e;
     }
 }

@@ -31,7 +31,7 @@ require(DIR_CORE . "/Core.class.php"); //核心类
 core::import(DIR_CORE . "/Model.class.php"); //数据模型基类
 core::import(DIR_CORE . "/Action.class.php"); //控制器基类
 core::import(DIR_COMMON . "/Common.func.php"); //公共函数
-core::import(DIR_LIB . "/Logger.class.php"); //日志类库
+core::import(DIR_LIB . "/LogRecord.class.php"); //日志类库
 core::import(DIR_CONFIG . "/ErrCode.inc.php"); //错误码列表
 core::import(DIR_CONFIG . "/DriveConf.inc.php"); //驱动库配置
 core::import(DIR_CONFIG . "/SystemSet.inc.php"); //系统设置
@@ -112,7 +112,7 @@ class Facade
         $callback = isset($_REQUEST["callback"]) ? $_REQUEST["callback"] : null;
         $token = isset($_REQUEST["token"]) ? $_REQUEST["token"] : null;
         $param = isset($_REQUEST["param"]) ? $_REQUEST["param"] : null;
-        logs("输入：action=" . $action . ",method=" . $method . ",reqId=" . $reqId . ",callback=" . $callback . ",token=" . $token . ",param=" . $param, logger::DEBUG);
+        logs("输入：action=" . $action . ",method=" . $method . ",reqId=" . $reqId . ",callback=" . $callback . ",token=" . $token . ",param=" . $param, LogRecord::DEBUG);
         try {
             $actionObj = core::load("Action.{$action}Action", array($reqId, $callback, $token));
             if ("__construct" == $method ||

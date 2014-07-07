@@ -35,7 +35,7 @@
  * +----------------------------------------------------------
  */
 function error($_msg, $_err){
-    logs($_msg . " ErrCode: " . $_err, Logger::FATAL);
+    logs($_msg . " ErrCode: " . $_err, LogRecord::FATAL);
     throw new Exception($_msg, $_err);
 }
 
@@ -54,7 +54,7 @@ function error($_msg, $_err){
  */
 function logs($_msg, $_level)
 {
-    return core::load("Lib.Logger", DriveConf::$LOGGER)->put($_msg, $_level);
+    return core::load("Lib.LogRecord", DriveConf::$LOGRECORD)->put($_msg, $_level);
 }
 
 /**

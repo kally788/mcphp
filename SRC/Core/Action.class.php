@@ -110,7 +110,7 @@ class Action
         }
         echo $ret;
         $this->_afterStartup($retMsg);
-        logs("输出：" . (SystemSet::OUTPUT_UNICODE ? unicode_decode($ret) : $ret) . " 耗时：(" . round((microtime_float() - TIME_START) * 1000) . ")毫秒", logger::DEBUG);
+        logs("输出：" . (SystemSet::OUTPUT_UNICODE ? unicode_decode($ret) : $ret) . " 耗时：(" . round((microtime_float() - TIME_START) * 1000) . ")毫秒", LogRecord::DEBUG);
         exit();
     }
 

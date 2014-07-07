@@ -49,7 +49,7 @@ class Memcached { //类定义开始
                 if(count($stats) == count($this->__config["CLUSTER"])){
                     error("所有缓存库出现故障", ErrCode::MEMCACHED_CONNECT_ERR);
                 }else{
-                    logs("部分缓存库出现故障 ： " . json_encode($stats), Logger::ERROR);
+                    logs("部分缓存库出现故障 ： " . json_encode($stats), LogRecord::ERROR);
                 }
             }
             $this->__mem->setCompressThreshold ( 2000, 0.2 );
