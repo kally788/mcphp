@@ -98,9 +98,10 @@ function cache($_key = null, $_value = "", $_expire = null)
         return $_cache [$_key];
     }
     $_value = $cache->get($_key);
-    if (!is_null($_value)) {
-        $_cache [$_key] = $_value;
+    if (is_null($_value)) {
+        return false;
     }
+    $_cache [$_key] = $_value;
     return $_value;
 }
 
