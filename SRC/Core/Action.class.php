@@ -170,7 +170,7 @@ class Action
      */
     protected function _getToken()
     {
-        $this->__token;
+        return $this->__token;
     }
 
     /**
