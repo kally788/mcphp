@@ -127,6 +127,7 @@ class LogRecord
                 $log .= self::$__logList[$i];
             }
         }
+        self::$__logList = array();
         file_put_contents($file, $log);
     }
 } 
