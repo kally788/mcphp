@@ -90,7 +90,6 @@ class LogRecord
         ) {
             return null;
         }
-
         $date = date("Y-m-d h:i:s");
         $time = microtime($date);
         $micro = explode(".", $time);
@@ -101,14 +100,33 @@ class LogRecord
             $rs .= PHP_EOL . "    -> " . $tree[$i]["file"] . " in " . $tree[$i]["line"] . " [ " . $tree[$i]["function"] . " ]";
         }
         $rs .= PHP_EOL;
-        $file = $this->__config["DIR"] . $this->__config["PREFIX"] . date("Y-m-d") . ".log";
+        self::$__logList[] = $rs;
+        return $rs;
+    }
+
+    /**
+     * 拆构函数，把日志写入文件
+     * +----------------------------------------------------------
+     * @public
+     * +----------------------------------------------------------
+     * @return void
+     * +----------------------------------------------------------
+     * @author zhujili <280000280@qq.com>
+     * @date 2014/07/09
+     * @version 1.0.0.0
+     * +----------------------------------------------------------
+     */
+    public function __destruct(){
+        $file = dirname(__FILE__)."/". $this->__config["DIR"] . $this->__config["PREFIX"] . date("Y-m-d") . ".log";
         $log = @file_get_contents($file);
-        if ($log) {
-            $log .= PHP_EOL . $rs;
-        } else {
-            $log .= $rs;
+        $len = count(self::$__logList);
+        for($i = 0; $i < $len; $i++){
+            if ($log) {
+                $log .= PHP_EOL . self::$__logList[$i];
+            } else {
+                $log .= self::$__logList[$i];
+            }
         }
         file_put_contents($file, $log);
-        return $rs;
     }
 } 

@@ -54,7 +54,7 @@ class DriveConf{
      */
     static $LOGRECORD = array(
         "LEVEL" => 0, //日志级别 0-4，正式环境下设为2
-        "DIR" => "../_logs/", //保存日志的目录
+        "DIR" => "../../_logs/", //保存日志的目录（相对LogRecord.class.php所在目录）
         "PREFIX" => "debug"//日志文件前缀
     );
 

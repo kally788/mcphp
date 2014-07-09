@@ -315,4 +315,86 @@ function unicode_decode($name)
     }
     return $name;
 }
+
+/**
+ * 计算2个经纬度之间的距离
+ * +----------------------------------------------------------
+ * @param    double $lat1 开始经度Y
+ * @param    double $lng1 开始纬度X
+ * @param    double $lat2 结束经度Y
+ * @param    double $lng2 结束纬度X
+ * +----------------------------------------------------------
+ * @return   int 距离/米
+ * +----------------------------------------------------------
+ * @author   zhujili <280000280@qq.com>
+ * @date     2014/07/08
+ * @version 1.0.0.0
+ * +----------------------------------------------------------
+ */
+function getDistance($lat1, $lng1, $lat2, $lng2)
+{
+    $rad =  3.1415926535898 / 180.0;
+    $EARTH_RADIUS = 6378.137;
+    $radLat1 = $lat1 * $rad;
+    //echo $radLat1;
+    $radLat2 = $lat2 * $rad;
+    $a = $radLat1 - $radLat2;
+    $b = $lng1 * $rad - $lng2 * $rad;
+    $s = 2 * asin(sqrt(pow(sin($a/2),2) + cos($radLat1)*cos($radLat2)*pow(sin($b/2),2)));
+    $s = $s *$EARTH_RADIUS;
+    $s = round($s * 10000) / 10000;
+    return round ($s * 1000);
+}
+
+/**
+ * 计算一个坐标半径范围内的最大/最小坐标值
+ * +----------------------------------------------------------
+ * @param    double $lat 经度Y
+ * @param    double $lng 纬度X
+ * @param    int $distance 半径/米
+ * +----------------------------------------------------------
+ * @return   array 4个范围坐标
+ * +----------------------------------------------------------
+ * @author   zhujili <280000280@qq.com>
+ * @date     2014/07/08
+ * @version 1.0.0.0
+ * +----------------------------------------------------------
+ */
+function getAround($lat, $lng, $distance){
+    $distance = $distance*0.7072/1000;//不知道为什么会差40%
+    $PI = 3.1415926535898;
+    $radius = 6378.137;
+    $lat = $lat * $PI /180;
+    $lng = $lng * $PI /180;  //先换算成弧度
+    $rad_dist = $distance / $radius;  //计算X公里在地球圆周上的弧度
+    $lat_min = $lat - $rad_dist;
+    $lat_max = $lat + $rad_dist;   //计算纬度范围
+    //因为纬度在-90度到90度之间，如果超过这个范围，按情况进行赋值
+    if($lat_min > -$PI/2 && $lat_max < $PI/2){
+        //开始计算经度范围
+        $lng_t = asin( sin($rad_dist) / cos($lat) );
+        $lng_min = $lng - $lng_t;
+        //同理，经度的范围在-180度到180度之间
+        if ( $lng_min < -$PI ) $lng_min += 2 * $PI;
+        $lng_max = $lng + $lng_t;
+        if ( $lng_max > $PI) $lng_max -= 2 * $PI;
+    } else {
+        $lat_min = max ($lat_min , -$PI/2);
+        $lat_max = min ($lat_max, $PI/2);
+        $lng_min = -$PI;
+        $lng_max = $PI;
+    }
+    //最后置换成角度进行输出
+    $lat_min = $lat_min * 180 / $PI;
+    $lat_max = $lat_max * 180 / $PI;
+    $lng_min = $lng_min * 180 / $PI;
+    $lng_max = $lng_max * 180 / $PI;
+    return array(
+        "lat_max"=>round($lat_max, 6),
+        "lat_min"=>round($lat_min, 6),
+        "lng_max"=>round($lng_max, 6),
+        "lng_min"=>round($lng_min, 6)
+    );
+}
+
 ?>
