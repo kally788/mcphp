@@ -251,7 +251,7 @@ function microtime_float()
 /**
  * unicode编码
  * +----------------------------------------------------------
- * @param    string $name 要编码的字符串
+ * @param    string $_name 要编码的字符串
  * +----------------------------------------------------------
  * @return    string
  * +----------------------------------------------------------
@@ -260,15 +260,15 @@ function microtime_float()
  * @version 1.0.0.0
  * +----------------------------------------------------------
  */
-function unicode_encode($name)
+function unicode_encode($_name)
 {
-    $name = iconv("UTF-8", "UCS-2", $name);
-    $len = strlen($name);
+    $_name = iconv("UTF-8", "UCS-2", $_name);
+    $len = strlen($_name);
     $str = "";
     for ($i = 0; $i < $len - 1; $i = $i + 2)
     {
-        $c = $name[$i];
-        $c2 = $name[$i + 1];
+        $c = $_name[$i];
+        $c2 = $_name[$i + 1];
         if (ord($c) > 0)
         {    // 两个字节的文字
             $str .= "\u".base_convert(ord($c), 10, 16).base_convert(ord($c2), 10, 16);
@@ -284,7 +284,7 @@ function unicode_encode($name)
 /**
  * unicode解码
  * +----------------------------------------------------------
- * @param    string $name unicode字符串
+ * @param    string $_name unicode字符串
  * +----------------------------------------------------------
  * @return    string
  * +----------------------------------------------------------
@@ -293,10 +293,10 @@ function unicode_encode($name)
  * @version 1.0.0.0
  * +----------------------------------------------------------
  */
-function unicode_decode($name)
+function unicode_decode($_name)
 {
     $pattern = "/([\w]+)|(\\\u([\w]{4}))/i";
-    preg_match_all($pattern, $name, $matches);
+    preg_match_all($pattern, $_name, $matches);
     if (!empty($matches))
     {
         $len = count($matches[0]);
@@ -309,20 +309,40 @@ function unicode_decode($name)
                 $code2 = base_convert(substr($str, 4), 16, 10);
                 $c = chr($code).chr($code2);
                 $c = iconv("UCS-2", "UTF-8", $c);
-                $name = str_ireplace($str, $c, $name);
+                $_name = str_ireplace($str, $c, $_name);
             }
         }
     }
-    return $name;
+    return $_name;
+}
+
+/**
+ * 判断是否为数字
+ * +----------------------------------------------------------
+ * @param    string $_v 要判断的字符串
+ * +----------------------------------------------------------
+ * @return    boot
+ * +----------------------------------------------------------
+ * @author   zhujili <280000280@qq.com>
+ * @date     2014/06/25
+ * @version 1.0.0.0
+ * +----------------------------------------------------------
+ */
+function isNum($_v)
+{
+    if(!isset($_v) || !preg_match(RE::CHECK_NUMBER, $_v)){
+        return false;
+    }
+    return true;
 }
 
 /**
  * 计算2个经纬度之间的距离
  * +----------------------------------------------------------
- * @param    double $lat1 开始经度Y
- * @param    double $lng1 开始纬度X
- * @param    double $lat2 结束经度Y
- * @param    double $lng2 结束纬度X
+ * @param    double $_lat1 开始经度Y
+ * @param    double $_lng1 开始纬度X
+ * @param    double $_lat2 结束经度Y
+ * @param    double $_lng2 结束纬度X
  * +----------------------------------------------------------
  * @return   int 距离/米
  * +----------------------------------------------------------
@@ -331,15 +351,15 @@ function unicode_decode($name)
  * @version 1.0.0.0
  * +----------------------------------------------------------
  */
-function getDistance($lat1, $lng1, $lat2, $lng2)
+function getDistance($_lat1, $_lng1, $_lat2, $_lng2)
 {
     $rad =  3.1415926535898 / 180.0;
     $EARTH_RADIUS = 6378.137;
-    $radLat1 = $lat1 * $rad;
+    $radLat1 = $_lat1 * $rad;
     //echo $radLat1;
-    $radLat2 = $lat2 * $rad;
+    $radLat2 = $_lat2 * $rad;
     $a = $radLat1 - $radLat2;
-    $b = $lng1 * $rad - $lng2 * $rad;
+    $b = $_lng1 * $rad - $_lng2 * $rad;
     $s = 2 * asin(sqrt(pow(sin($a/2),2) + cos($radLat1)*cos($radLat2)*pow(sin($b/2),2)));
     $s = $s *$EARTH_RADIUS;
     $s = round($s * 10000) / 10000;
@@ -349,9 +369,9 @@ function getDistance($lat1, $lng1, $lat2, $lng2)
 /**
  * 计算一个坐标半径范围内的最大/最小坐标值
  * +----------------------------------------------------------
- * @param    double $lat 经度Y
- * @param    double $lng 纬度X
- * @param    int $distance 半径/米
+ * @param    double $_lat 经度Y
+ * @param    double $_lng 纬度X
+ * @param    int $_distance 半径/米
  * +----------------------------------------------------------
  * @return   array 4个范围坐标
  * +----------------------------------------------------------
@@ -360,12 +380,12 @@ function getDistance($lat1, $lng1, $lat2, $lng2)
  * @version 1.0.0.0
  * +----------------------------------------------------------
  */
-function getAround($lat, $lng, $distance){
-    $distance = $distance*0.7072/1000;//不知道为什么会差40%
+function getAround($_lat, $_lng, $_distance){
+    $distance = $_distance*0.7072/1000;//不知道为什么会差40%
     $PI = 3.1415926535898;
     $radius = 6378.137;
-    $lat = $lat * $PI /180;
-    $lng = $lng * $PI /180;  //先换算成弧度
+    $lat = $_lat * $PI /180;
+    $lng = $_lng * $PI /180;  //先换算成弧度
     $rad_dist = $distance / $radius;  //计算X公里在地球圆周上的弧度
     $lat_min = $lat - $rad_dist;
     $lat_max = $lat + $rad_dist;   //计算纬度范围
@@ -395,6 +415,34 @@ function getAround($lat, $lng, $distance){
         "lng_max"=>round($lng_max, 6),
         "lng_min"=>round($lng_min, 6)
     );
+}
+
+/**
+ * 转换火星坐标
+ * +----------------------------------------------------------
+ * @param    double $_lat 经度Y
+ * @param    double $_lng 纬度X
+ * @param    int $_precision 精度，默认小数点后3位
+ * +----------------------------------------------------------
+ * @return   array 转换后坐标
+ * +----------------------------------------------------------
+ * @author   zhujili <280000280@qq.com>
+ * @date     2014/07/10
+ * @version 1.0.0.0
+ * +----------------------------------------------------------
+ */
+function gpsLatLng($_lat, $_lng, $_precision = 3){
+    $kv = "LAT_LNG_" . round($_lat, $_precision) . "_" . round($_lng, $_precision);
+    $ll = cache($kv);
+    if(false === $ll){
+        $tmp = core::load("Lib.GpsOffset")->revise($_lat, $_lng);
+        $ll = array(
+            "lat" => round($tmp["lat"], $_precision),
+            "lng" => round($tmp["lng"], $_precision)
+        );
+        cache($kv, $ll);
+    }
+    return $ll;
 }
 
 ?>
