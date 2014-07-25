@@ -40,7 +40,7 @@ class Memcached { //类定义开始
             $this->__mem = new Memcache();
             $stats = array();
             foreach( $this->__config["CLUSTER"] as $v ){
-                $this->__mem->addServer( $v[0], $v[1], true, $v[2], null, 60);
+                $this->__mem->addServer( $v[0], $v[1]);//, true, $v[2], null, 60
                 if(0 == $this->__mem->getServerStatus($v[0], $v[1])){
                     $stats[] = $v;
                 }
