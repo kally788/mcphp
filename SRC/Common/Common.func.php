@@ -75,7 +75,7 @@ function cache($_key = null, $_value = "", $_expire = null)
     static $_cache = array();
 
     //取得缓存对象实例
-    $cache = core::load("Lib.memcached", DriveConf::$MEMCACHED);
+    $cache = core::load("Lib.Memcached", DriveConf::$MEMCACHED);
     //清除所有缓存
     if (is_null($_key)) {
         return $cache->clear();
