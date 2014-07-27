@@ -466,7 +466,11 @@ class Model
         };
         $sql = "";
         foreach ($_options as $field => $value) {
-            $sql .= "`" . $field . "`='" . $value . "',";
+            if(0 === stripos($value, $field)){
+                $sql .= "`" . $field . "`=" . $value . ",";
+            }else{
+                $sql .= "`" . $field . "`='" . $value . "',";
+            }
         }
         $sql = "UPDATE {$this->__table} SET " . trim($sql, ',');
         if(empty($this->__where)){
